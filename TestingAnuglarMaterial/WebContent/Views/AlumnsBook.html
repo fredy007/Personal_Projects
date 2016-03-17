@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<meta charset="UTF-8">
+<title>Cuaderno Alumnos</title>
+</head>
+
+
+<body ng-controller="AlumnosController">
+	<h1>Cuaderno Alumnos</h1>
+	
+	<div>
+		
+		<div ng-repeat="alumno in alumnos">  <!-- NG-REPEAT show list (Duplicate the section by the number of alumons in alumnos list) -->
+		
+			<div> {{alumno.nombre}} xx {{alumno.telefono}}</div>
+			<span>{{alumno.curso}}</span>
+		
+		</div>
+		
+		
+	</div>
+
+	
+	<!-- BEST PRACTICE AT THE END OF BODY http://developer.yahoo.com/performance/rules.html (BLOCKING THE PARALELL DOWNLOAD) -->
+	<script src="../js/angular.min.js" type="text/javascript"></script>
+	<script src="../Controllers/AlumnsBook.js"    type="text/javascript"></script>
+
+</body>
+
+
+</html>
