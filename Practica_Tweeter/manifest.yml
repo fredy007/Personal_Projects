@@ -1,0 +1,10 @@
+---
+applications:
+- name: PracticaTweeter
+  memory: 128M
+  instances: 1
+  path: /tmp/Practica_Tweeter.jar
+  host: PracticaTweeter
+  domain:mybluemix.net
+  host:tweetservice2
+  disk_quota: 1024M
